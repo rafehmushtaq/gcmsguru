@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CBSA Notes</title>
+</head>
+<body>
+
+	<script src="https://www.paypal.com/sdk/js?client-id=AVo1jLwCnTB8q1XYfdoONnWflo-JfvZ3zgySU4V1xZ-TfiTNjET5K5HbFu8_dCV7fsg_gk02iXJj36q0"></script>
+
+
+  
+  <div id="paypal-button-container">
+
+ 
+
+	  <script>
+	  paypal.Buttons({
+	    createOrder: function(data, actions) {
+	      // This function sets up the details of the transaction, including the amount and line item details.
+	      return actions.order.create({
+	        purchase_units: [{
+	          amount: {
+	            value: '0.030'
+	          }
+	        }]
+	      });
+	    }
+	  }).render('#paypal-button-container');
+	</script>
+
+</div>

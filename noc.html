@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NOC Selection</title>
+</head>
+<body>
+
+	<script src="https://www.paypal.com/sdk/js?client-id=AUm3ofEuKpGaitcCGuifispjSoPx3MFcbMhL7aEnYejVNYE-qkTWnYvK4PezNboD6NA_PkUnQ35s2JGL"></script>
+
+
+  
+  <div id="paypal-button-container">
+
+ 
+
+	  <script>
+	  paypal.Buttons({
+	    createOrder: function(data, actions) {
+	      // This function sets up the details of the transaction, including the amount and line item details.
+	      return actions.order.create({
+	        purchase_units: [{
+	          amount: {
+	            value: '0.01'
+	          }
+	        }]
+	      });
+	    }
+	  }).render('#paypal-button-container');
+	</script>
+
+</div>

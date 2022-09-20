@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+  	box-sizing: border-box;
+  	font-family: 'Abel';
+  	font-size: 20px;
+}
+
+@media only and (max-width: 600px){
+      *{
+        font-size: 22px;}
+        
+}
+
+
+.right {
+	background-color: #f2f1ec;
+	padding: 25px;
+	padding-top: 35px;
+}
+
+hr.divider{
+	height: 3px;
+	background-color: green; 
+}
+
+.section-x{
+	padding: 20px;
+}
+
+.port{
+	background-color: #88b396;
+	padding: 25px;
+	padding-top: 35px;
+}
+
+.split{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+/* Why Us */
+
+.box {
+	text-align: justify;
+  text-overflow: none;
+  padding: 10px;
+}
+
+.whyus {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-gap: 5px;
+	text-align: left;
+}
+
+.radius {
+    cursor:pointer;
+    /*display:block;*/
+    text-align: left;
+    font-size:1.2em;
+    border-radius:5px;
+    border:1.5px solid #bbb;
+    transition: all 0.3s linear;
+    background-color: none;    
+}
+
+.whyus :hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.act, .dot:hover {
+  background-color: grey;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/* FAQ */
+
+.faq{
+	background-color: none;
+	padding: 25px;
+	padding-top: 35px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent; 
+}
+
+.live, .collapsible:hover {
+  background-color: transparent;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: lighter;
+  float: right;
+  margin-left: 5px;
+}
+
+.live:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+/*GCMS Types for Payment*/
+
+.types{
+	display: flex;
+}
+
+.type-1{
+	padding: 5px;
+}
+
+/*Footer*/
+.footer{
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.price-header{
+  text-align: center;
+}
+
+/*Checkout Button*/
+.button {
+  border-radius: 4px;
+  background-color: #343A40;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+   border-radius: 66px;
+  background: #2b3436;
+  box-shadow: inset 14px -14px 28px #161b1c,
+              inset -14px 14px 28px #404d50;
+
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Price Table*/
+.checkout{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 40px;
+    padding: 25px;   
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #f2f1ec;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price .header {
+  background-color: #17a2b8;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.price .bullet {
+  border-bottom: 1px solid #f2f1ec;
+  padding: 10px;
+  text-align: left;
+}

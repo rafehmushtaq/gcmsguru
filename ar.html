@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application Review</title>
+</head>
+<body>
+
+	<script src="https://www.paypal.com/sdk/js?client-id=AeQftdgGhAAIPCcCQRixozGwF9_sCueBd4zargN_thJKQsj3Gc_DyQuo8oEebaFOK4N0k5hwTD7Aa9lj"></script>
+
+
+  
+  <div id="paypal-button-container">
+
+ 
+
+	  <script>
+	  paypal.Buttons({
+	    createOrder: function(data, actions) {
+	      // This function sets up the details of the transaction, including the amount and line item details.
+	      return actions.order.create({
+	        purchase_units: [{
+	          amount: {
+	            value: '0.150'
+	          }
+	        }]
+	      });
+	    }
+	  }).render('#paypal-button-container');
+	</script>
+
+</div>
